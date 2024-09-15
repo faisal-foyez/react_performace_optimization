@@ -1,4 +1,4 @@
-import QueingState from './components/QueingState';
+import Immer from './components/ImmerUse';
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <QueingState />
+      <Immer />
     </>
   )
 }
