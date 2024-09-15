@@ -1,4 +1,4 @@
-import Parent from './components/Parent';
+import QueingState from './components/QueingState';
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Parent />
+      <QueingState />
     </>
   )
 }
