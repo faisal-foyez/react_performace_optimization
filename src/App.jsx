@@ -1,8 +1,10 @@
-import Messanger from './components/Messanger';
+import RefImperative from './components/RefImperative';
 import './App.css'
 
 function App() {
-  <Messanger />
+  return(
+    <RefImperative />
+  )
 }
 
 export default App
