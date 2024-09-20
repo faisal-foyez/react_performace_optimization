@@ -1,19 +1,20 @@
 import VideoPlayer from './components/VideoPlayer';
 import './App.css'
 import { useState } from 'react';
+import AdjustState from './components/AdjustState';
 function App() {
  
   
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [items, setItems] = useState(['Jamal','Kamal', 'Rahim']);
   return (
     <>
-      <button onClick={() => setIsPlaying(!isPlaying)}>
-        {isPlaying ? 'Pause' : 'Play'}
+      <button onClick={() => setItems(['John','Jack','Jill'])}>
+        Change John
       </button>
-      <VideoPlayer
-        isPlaying={isPlaying}
-        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-      />
+      <button onClick={() => setItems(['Jamal','Kamal', 'Rahim'])}>
+        Change Jamal
+      </button>
+      <AdjustState items={items}/>
     </>
   );
   
