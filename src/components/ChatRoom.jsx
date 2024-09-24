@@ -1,6 +1,6 @@
 import { useEffect, useEffectEvent } from "react";
 
-function ChatRoom({ roomId, theme }) {
+export default function ChatRoom({ roomId, theme }) {
   const onConnected = useEffectEvent(() => {
     showNotification('Connected!', theme);
   });
