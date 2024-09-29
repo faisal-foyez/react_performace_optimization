@@ -13,6 +13,9 @@ export default function ChatRoom({ roomId, theme }) {
     connection.connect();
     return () => connection.disconnect();
   }, [roomId]);
-
+  
+  useEffect(()=>{
+    showNotification();
+  },[theme])
   return <h1>Welcome to the {roomId} room!</h1>
 }
