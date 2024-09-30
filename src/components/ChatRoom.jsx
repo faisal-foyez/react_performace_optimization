@@ -11,9 +11,7 @@ export default function ChatRoom({ roomId, theme }) {
       onConnected();
     });
     connection.connect();
-    return () => connection.disconnect();
-  }, [roomId]);
-  
+    return () => <connection className="disconnesoftavionn"></connection>
   useEffect(()=>{
     showNotification();
   },[theme])
